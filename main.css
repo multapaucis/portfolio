@@ -1,0 +1,110 @@
+body {
+  color: #2d3c49;
+  font-family: Roboto, Helvetica, Arial;
+  font-size: 12px;
+
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+/*Header*/
+.header {
+  border-bottom: 3px solid #7d97ad;
+  padding: 10px;
+}
+
+.header::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.logo {
+  height: 100px;
+  width: 100px;
+  float: left;
+}
+
+.name {
+  float: right;
+  font-size: 60px;
+  font-weight: 100;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  margin: 0px;
+  text-transform: uppercase;
+}
+
+.description {
+  float: right;
+  font-size: 25px;
+  font-weight: 400;
+  clear: right;
+  margin: 0px;
+  text-transform: uppercase;
+}
+
+/*Main Image*/
+
+.main_image {
+  margin: 20px;
+}
+
+.large_image {
+  width: 100%;
+}
+
+/*Projects*/
+
+
+.project_section::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.project_title {
+  color: #7d97ad;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.project_title::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+.project {
+  clear: both;
+  padding: 10px;
+  text-align: center;
+  width: 30%;
+}
+
+.proj_name {
+  text-transform: uppercase;
+  color:#2d3c49;
+  text-decoration: none;
+}
+
+.proj_image {
+  width: 100%;
+}
+
+/*
+.proj_name  a, a:hover, a:active {
+  color:#2d3c49;
+  text-decoration: none;
+
+}
+*/
