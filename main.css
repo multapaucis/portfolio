@@ -1,7 +1,8 @@
 body {
   color: #2d3c49;
   font-family: Roboto, Helvetica, Arial;
-  font-size: 12px;
+  font-size: 14px;
+  margin: 10px;
 
 }
 
@@ -34,9 +35,9 @@ ul {
   float: right;
   font-size: 60px;
   font-weight: 100;
-  padding-bottom: 0px;
-  padding-top: 0px;
-  margin: 0px;
+  padding-bottom: 0;
+  padding-top: 0;
+  margin: 0;
   text-transform: uppercase;
 }
 
@@ -52,12 +53,15 @@ ul {
 /*Main Image*/
 
 .main_image {
-  margin: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 150px;
+  background-image: url("./images/mountains.png");
+  background-size: cover;
+  background-position: top right;
 }
 
-.large_image {
-  width: 100%;
-}
 
 /*Projects*/
 
@@ -83,28 +87,30 @@ ul {
 .projects {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .project {
   clear: both;
-  padding: 10px;
+  padding: 24px;
   text-align: center;
-  width: 30%;
+  width: 25%;
+  text-decoration: none;
+}
+.project a {
+  text-decoration: none;
+  color: #2d3c49;
+
+}
+.project a:hover {
+  color: #7d97ad;
 }
 
 .proj_name {
+  font-size: 30px;
   text-transform: uppercase;
-  color:#2d3c49;
-  text-decoration: none;
 }
 
 .proj_image {
   width: 100%;
+  padding:  5px
 }
-
-/*
-.proj_name  a, a:hover, a:active {
-  color:#2d3c49;
-  text-decoration: none;
-
-}
-*/
