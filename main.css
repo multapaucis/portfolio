@@ -4,7 +4,6 @@ body {
   font-size: 14px;
   margin: 10px;
   min-width: 175px;
-
 }
 
 ul {
@@ -15,6 +14,7 @@ ul {
 
 
 /*Header*/
+
 .header {
   border-bottom: 3px solid #7d97ad;
   padding: 10px;
@@ -35,72 +35,58 @@ ul {
 .name {
   font-size: 40px;
   font-weight: 100;
-  padding-bottom: 0;
-  padding-top: 0;
   margin: 0;
   text-transform: uppercase;
 }
 
 .description {
+  clear: both;
   font-size: 20px;
   font-weight: 400;
-  clear: both;
-  margin: 0px;
+  margin: 0;
   text-transform: uppercase;
 }
 
+
 /*Main Image*/
 
-.main_image {
+.main-image {
   margin-top: 20px;
   margin-bottom: 20px;
   width: 100%;
   height: 100px;
-  background-image: url("./images/mountains2.png");
+  background-image: url("./images/mountains_center.png");
   background-size: cover;
-  background-position: top right;
+  background-position: top center;
 }
 
 
 /*Projects*/
 
-
-.project_section::after {
-  clear: both;
-  content: "";
-  display: block;
-}
-
-.project_title {
+.proj-title {
   color: #7d97ad;
   font-size: 25px;
   font-weight: 300;
   text-align: center;
 }
 
-.project_title::after {
-  clear: both;
-  content: "";
-  display: block;
-}
-
 .projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  text-align: center;
   overflow-wrap: break-word;
+  text-align: center;
 }
+
 .project {
-  clear: both;
   text-align: center;
   margin-left: 20px;
   margin-right: 20px;
   min-width: 150px;
-  max-width: 250px;
+  max-width: 300px;
   width: 25%;
-  text-decoration: none;
 }
+
 .project a {
   text-decoration: none;
   color: #2d3c49;
@@ -110,57 +96,73 @@ ul {
   color: #7d97ad;
 }
 
-.proj_name {
+.proj-name {
   font-size: 20px;
   text-transform: uppercase;
   font-weight: 400;
   font-kerning: none;
+  margin: 10px;
 }
 
-.proj_image {
+.proj-image {
   width: 85%;
 }
 
 
-
+/*Breakpoint 1*/
 
 @media screen and (min-width: 530px) {
 
-  .main_image {
-    height: 200px;
+  .main-image {
+    background-image: url("./images/mountains.png");
+    background-position: top right;
+    height: 150px;
   }
+
   .logo {
     float:left;
   }
+
   .name {
     float: right;
     font-size: 50px
   }
+
   .description {
     float: right;
     font-size: 22px;
     clear: right;
   }
 
-  .project_title {
+  .proj-title {
     font-size: 30px;
     text-align: left;
     margin-left: 15px;
   }
 }
 
+
+/*Breakpoint 2*/
+
 @media screen and (min-width: 975px) {
+
+  .main-image {
+    height: 200px;
+  }
 
   .name {
     font-size: 60px;
   }
+
   .description {
     font-size: 25px;
   }
-  .project_title {
+
+  .proj-title {
     font-size: 40px;
   }
-  .proj_name {
+
+  .proj-name {
     font-size: 30px;
   }
 }
